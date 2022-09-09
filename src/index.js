@@ -2,6 +2,7 @@ import "./styles.css";
 import displayData from "./data.js";
 import getDateTime from "./time.js";
 
+window.addEventListener("load", displayData("Berlin"));
 getDateTime();
 
 const searchBtn = document.querySelector("button");

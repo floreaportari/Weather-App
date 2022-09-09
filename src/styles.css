@@ -20,6 +20,14 @@ body {
   background-position: 60% 40%;
 }
 
+.header-desc {
+  position: absolute;
+  top: 15%;
+  font-size: clamp(1.6rem, 2.7vw, 3rem);
+  color: #fff;
+  text-shadow: 1px 1px #e7e0e0;
+}
+
 .weather-container {
   width: min(500px, 90vw);
   padding: 1.5rem;
@@ -67,7 +75,6 @@ body {
   color: #fff;
 }
 
-.date,
 .temp,
 .wind-speed,
 .humidity,
@@ -78,11 +85,13 @@ body {
 }
 
 .location {
-  font-size: clamp(2rem, 2.3vw, 2.5rem);
+  font-size: clamp(1.7rem, 1.8vw, 2.2rem);
 }
 
 .date {
   font-style: italic;
+  font-size: 17px;
+  margin: 1.5rem 0;
 }
 
 .temp-container {

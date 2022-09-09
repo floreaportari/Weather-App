@@ -1,3 +1,6 @@
 export default function getLocation() {
-  return document.querySelector("input").value;
+  const userInput = document.querySelector("input");
+  const city = userInput.value;
+  userInput.value = "";
+  return city;
 }
