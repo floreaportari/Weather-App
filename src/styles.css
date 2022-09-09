@@ -84,3 +84,14 @@ body {
 .date {
   font-style: italic;
 }
+
+.temp-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.temp-container > * {
+  padding: 0 0.5rem;
+  font-size: 25px;
+}
