@@ -3,7 +3,7 @@ import getLocation from "./location.js";
 export default async function displayData() {
   try {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${getLocation()}&appid=e3e86caf81827a16d210622a44632411&units=metric`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${getLocation}&appid=e3e86caf81827a16d210622a44632411&units=metric`,
       { mode: "cors" }
     );
     const data = await response.json();
