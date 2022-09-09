@@ -22,7 +22,7 @@ body {
 
 .header-desc {
   position: absolute;
-  top: 15%;
+  top: 10%;
   font-size: clamp(1.6rem, 2.7vw, 3rem);
   color: #fff;
   text-shadow: 1px 1px #e7e0e0;
