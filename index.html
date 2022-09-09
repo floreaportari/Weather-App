@@ -3,7 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WeatheR App</title>
+    <title>Weather App</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body><script defer src="bundle.js"></script></body>
+  <body>
+    <div class="weather-container">
+      <div class="search-container">
+        <input
+          type="text"
+          name="location"
+          id="location"
+          placeholder="Enter city name"
+        />
+        <button>Search</button>
+      </div>
+      <p class="date" id="date">Sep 9, 08:19am</p>
+      <h2 class="location" id="location">Weather in <span id="cityName">Madrid</span></h2>
+      <p class="temp" id="temp">
+        <i class="weather-img" id="weather-img"></i>15&#8451
+      </p>
+      <p class="wind-speed" id="wind-speed">Wind speed: 4.6m/s</p>
+      <p class="humidity" id="humidity">Humidity: 95%</p>
+      <p class="visibility" id="visibility">Visibility: 9.0km</p>
+    </div>
+  <script defer src="bundle.js"></script></body>
 </html>
