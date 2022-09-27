@@ -1,9 +1,13 @@
 import getLocation from "./location.js";
+import * as dotenv from "dotenv";
+dotenv.config();
+console.log();
 
 export default async function displayData() {
+  const apiKey = process.env.API_KEY;
   try {
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${getLocation}&appid=e3e86caf81827a16d210622a44632411&units=metric`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${getLocation}&appid=${apiKey}&units=metric`,
       { mode: "cors" }
     );
     const data = await response.json();
